@@ -1,0 +1,25 @@
+[TestMethod]
+{
+  Iwebdriver driver = new Chrome driver();
+  driver.url = "www.yahoo.com";
+  string mainwindowhandle=driver.currentwindowhandle;
+  console.writeline("currentwindowhandle "+mainwindowhandle");
+  driver.findelement(By.partiallinktext("Career")).click();
+  Readonlycollection<string>windowhandles=driver.windowhandles;
+  string new windowhandle = " ";
+  foreach(string handle in windowhandles)
+  {
+  if(handle!=mainwindowhandle
+  {
+  new windowhandle=handle;
+  break;
+  }
+  }
+  driver.Switchto() window(new windowhandle):
+ console.writline ("title of new window")
+ driver.findelement(By.id("search-form").sendkeys("Qa Enginner");
+ driver.findelement(by.classname("submit").click();
+ (itakescreenshot)driver.getscreenshot().saveasfile("Test.png",screenshotimageformat.png)
+ driver.quit();
+  
+  
